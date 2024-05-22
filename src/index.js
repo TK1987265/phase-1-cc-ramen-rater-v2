@@ -11,8 +11,8 @@ const handleClick = (event) => {
         <img class="detail-image" src="${ramen.image}" alt="${ramen.name}">
         <h2 class="name">${ramen.name}</h2>
         <h3 class="restaurant">Restaurant: ${ramen.restaurant}</h3>
-        <p>Rating: <span id="rating-display">${ramen.rating}</span></p>
-        <p>Comment: <span id="comment-display">${ramen.comment}</span></p>
+        <p><b>Rating:</b> <span id="rating-display">${ramen.rating}</span></p><br>
+        <p><b>Comment:</b> <span id="comment-display">${ramen.comment}</span></p><br>
         <button id="delete">Delete</button>
       `;
       document
@@ -89,3 +89,4 @@ main();
 
 // Export functions for testing
 export { displayRamens, addSubmitListener, handleClick, main };
+
